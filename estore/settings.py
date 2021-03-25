@@ -99,8 +99,12 @@ AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
+
+    
 ]
 
+LOGIN_REDIRECT_URL = 'products_list'
+LOGOUT_REDIRECT_URL = 'products_list'
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
@@ -128,4 +132,4 @@ STATICFILES_DIRS = [
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-ALLOWED_HOSTS = ['.herokuapp.com',]
+# ALLOWED_HOSTS = ['.herokuapp.com',]
